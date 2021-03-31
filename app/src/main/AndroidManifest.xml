@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.edumantradoubts">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/em_logo_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EdumantraDoubts">
+        <activity android:name=".student.TechnicalDoubtsActivity" />
+        <activity android:name=".teacher.TeacherNavActivity" />
+        <activity android:name=".questionsandanswers.ViewQuestionsComplete" />
+        <activity android:name=".questionsandanswers.ViewQuestions" />
+        <activity android:name=".gettingimages.UploadImages" />
+        <activity android:name=".student.AskingQuestionActivity" />
+        <activity android:name=".student.SelectActivity" />
+        <activity
+            android:name=".student.StudentNavActivity"
+            android:label="@string/title_activity_student_nav" />
+        <activity android:name=".loginsignup.SignUpTeacherActivity" />
+        <activity android:name=".loginsignup.SignUpStudentActivity" />
+        <activity android:name=".loginsignup.LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

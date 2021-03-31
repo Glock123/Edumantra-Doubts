@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".loginsignup.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        android:background="@color/appbar"
+        android:paddingVertical="5dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkBoxChecked"
+            android:layout_marginRight="5dp"
+            android:text="Teacher"
+            android:layout_marginEnd="5dp" />
+        <CheckBox
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="checkBoxChecked"
+            android:text="Student"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="@color/appbar_light"
+        app:cardCornerRadius="15dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/reference_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginHorizontal="5dp"
+            app:backgroundColor="@color/appbar_light"
+            android:hint="Select student or teacher"
+            android:textSize="20sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardBackgroundColor="@color/appbar_light"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:hint="Enter Password"
+            app:backgroundColor="@color/appbar_light"
+            android:textSize="20sp"
+            android:inputType="textPassword"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="@color/appbar_light"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Login"
+            android:backgroundTint="@color/appbar_light"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textSize="25sp"
+            android:textColor="@android:color/secondary_text_light"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="15dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/create_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp as student"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/create_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp as teacher"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

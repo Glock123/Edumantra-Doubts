@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".questionsandanswers.ViewAnswersFragment">
+
+    <TextView
+        android:id="@+id/num_answers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Answers"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/label_for_no_answers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--NO ANSWERS AVAILABLE--"
+        android:textSize="20sp"
+        android:layout_marginVertical="7dp"
+        android:gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_view_answers"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

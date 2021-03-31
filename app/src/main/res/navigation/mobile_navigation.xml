@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.edumantradoubts.student.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_my_doubts"
+        android:label="@string/title_dashboard"
+        android:name="com.example.edumantradoubts.questionsandanswers.ViewQuestionsFragment"
+        tools:layout="@layout/fragment_view_questions"
+         />
+    <!--android:name="com.example.edumantradoubts.student.ui.mydoubts.MyDoubtsFragment"
+    tools:layout="@layout/fragment_my_doubts"-->
+
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.edumantradoubts.student.ui.profile.ProfileFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

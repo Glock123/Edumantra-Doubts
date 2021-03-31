@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "806803520635",
+    "project_id": "edumantradoubts",
+    "storage_bucket": "edumantradoubts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806803520635:android:03114883541c5b3b3376de",
+        "android_client_info": {
+          "package_name": "com.example.edumantradoubts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806803520635-cr9li3ecopufhm33a155diim6qb0dcdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNTwY5QWTd169V1bWFePxHfvb-wJb14Dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806803520635-cr9li3ecopufhm33a155diim6qb0dcdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
